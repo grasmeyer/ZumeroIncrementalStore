@@ -61,7 +61,7 @@
 
 + (NSDictionary *)scheme
 {
-	return @{ @"dbfile": @"ztauth", @"scheme_type": @"internal" };
+	return @{ @"dbfile": @"zauth", @"scheme_type": @"internal" };
 }
 
 @end
