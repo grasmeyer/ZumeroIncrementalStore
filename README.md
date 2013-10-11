@@ -95,7 +95,7 @@ Take a look at the Zumero iOS Example in the Examples directory. The example app
         
 8. Set up a free account at [zumero.com](http://www.zumero.com).
 9. Create your own custom subclass of ZumeroIncrementalStore. See the section below for details.
-10. Set up your Access Control List
+10. Set up your Access Control List. See the section below for details.
 
 ### Installation with CocoaPods
 
@@ -211,6 +211,15 @@ Here's an example of the `ZumeroExampleIncrementalStore.m` file from the Zumero 
 
 @end
 ```
+
+## How to Set Up a Local Zumero Server
+
+1. Download the Zumero Development Server after signing up for a Zumero account at [http://zumero.com/dev-center/](http://zumero.com/dev-center/).
+2. Open a new Terminal window and cd to the `zumero_dev_server` directory.
+3. Launch the local server by typing `bin/zumero`.
+4. Open a new terminal window and cd to the `Examples/Access Control List Setup` directory in this repository. 
+5. Open the `local_setup.sql` file and change YOUR_PASSWORD to your own password.
+6. Initialize the local Access Control List by typing `sqlite3 :memory: -init local_setup.sql`.
 
 ## Known Issues
 
