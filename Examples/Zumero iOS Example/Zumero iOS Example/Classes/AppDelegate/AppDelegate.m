@@ -6,12 +6,14 @@
 // All times are in seconds
 #define kIdleTimeAfterLaunch 5
 #define kIdleTimeAfterTouchEvent 5
+// The sync interval was changed to 6 seconds for testing purposes, but it should be at least a minute for a production app
 //#define kSyncIntervalAfterSuccessfulSync 60
 #define kSyncIntervalAfterSuccessfulSync 6
 #define kSyncIntervalAfterFailedSync 300
 
 BOOL const DELETE_DATABASE_AT_LAUNCH = NO;
 BOOL const USE_ZUMERO_STORE = YES;
+// Sync has been disabled for now, since there is an iOS 7-related CFNetworking bug in the Zumero SDK. It should be fixed soon.
 BOOL const SYNC_ENABLED = NO;
 
 NSString * const ZumeroIncrementalStoreSyncDidComplete = @"ZumeroIncrementalStoreSyncDidComplete";
