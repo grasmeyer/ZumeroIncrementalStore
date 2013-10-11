@@ -224,7 +224,9 @@ Here's an example of the `ZumeroExampleIncrementalStore.m` file from the Zumero 
 ## Known Issues
 
 * The Zumero iOS SDK has a bug related to CFNetworking that can cause the sync to hang in iOS 7. Zumero is currently working with Apple to resolve this issue. 
+* As a result, the `SYNC_ENABLED` flag has been set to NO at the top of `AppDelegate.m` for now.
 * The Zumero Mac SDK framework hasn't been released yet, so the Zumero Mac Example is just a placeholder for now.
+* There is a bug in Xcode 5 that causes the labels to be hidden in some of the UITableViewCells within the Storyboard.
 
 ## Next Steps
 
