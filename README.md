@@ -1,6 +1,6 @@
 # ZumeroIncrementalStore
 
-ZumeroIncrementalStore is an [`NSIncrementalStore`](https://developer.apple.com/library/ios/DOCUMENTATION/CoreData/Reference/NSIncrementalStore_Class/Reference/NSIncrementalStore.html) subclass that lets you use Core Data with the [Zumero SDK](http://zumero.com) for iOS and Mac. Zumero is a "replicate and sync" technology based on SQLite that allows apps to be fully functional offline and sync in the background when they're online. 
+ZumeroIncrementalStore is an [`NSIncrementalStore`](https://developer.apple.com/library/ios/DOCUMENTATION/CoreData/Reference/NSIncrementalStore_Class/Reference/NSIncrementalStore.html) subclass that lets you use Core Data with the [Zumero SDK](http://zumero.com) to sync data between iOS and Mac apps. Zumero is a "replicate and sync" technology based on SQLite that allows apps to be fully functional offline and sync in the background when they're online. 
 
 ### What does that mean?
 
