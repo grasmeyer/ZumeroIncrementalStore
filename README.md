@@ -4,9 +4,15 @@ ZumeroIncrementalStore is an [`NSIncrementalStore`](https://developer.apple.com/
 
 ### What does that mean?
 
-It means that you can add syncing to your Core Data app by swapping out Apple's NSPersistentStore with ZumeroIncrementalStore, and as far as the app knows, it's just using Core Data with a local data file. Then whenever you want your app to sync, you call a sync method in ZumeroIncrementalStore, and sync happens in the background. 
+It means that you can add syncing to your Core Data app by swapping out Apple's NSPersistentStore with ZumeroIncrementalStore, and as far as the app knows, it's just using Core Data with a local data file. Then whenever you want your app to sync, you call a sync method in the Zumero iOS SDK, and sync happens in the background. 
 
-Here's a diagram that shows how it works:
+Here's a top-level overview of how it works:
+
+<p align="center" >
+  <img src="/Images/Overview.png">
+</p>
+
+The next figure shows how ZumeroIncrementalStore fits into the Core Data stack:
 
 <p align="center" >
   <img src="/Images/ZumeroIncrementalStore.png">
