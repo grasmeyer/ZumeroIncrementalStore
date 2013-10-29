@@ -51,12 +51,12 @@
 
     Assistant *assistant1 = [Assistant insertInManagedObjectContext:context];
     assistant1.name = @"Assistant 1";
-    assistant1.hourlyRateValue = 10.;
+    assistant1.hourlyRate = [[NSDecimalNumber alloc] initWithString:@"10"];
     [task1 addAssistantsObject:assistant1];
     
     Assistant *assistant2 = [Assistant insertInManagedObjectContext:context];
     assistant2.name = @"Assistant 2";
-    assistant2.hourlyRateValue = 20.;
+    assistant2.hourlyRate = [[NSDecimalNumber alloc] initWithString:@"20"];
     [task1 addAssistantsObject:assistant2];
     
     [context saveWithoutSyncing];

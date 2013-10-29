@@ -39,14 +39,8 @@ extern const struct AssistantRelationships {
 
 
 
-@property (nonatomic, strong) NSNumber* hourlyRate;
+@property (nonatomic, strong) NSDecimalNumber* hourlyRate;
 
-
-
-
-@property (atomic) double hourlyRateValue;
-- (double)hourlyRateValue;
-- (void)setHourlyRateValue:(double)value_;
 
 
 //- (BOOL)validateHourlyRate:(id*)value_ error:(NSError**)error_;
@@ -77,11 +71,8 @@ extern const struct AssistantRelationships {
 @interface _Assistant (CoreDataGeneratedPrimitiveAccessors)
 
 
-- (NSNumber*)primitiveHourlyRate;
-- (void)setPrimitiveHourlyRate:(NSNumber*)value;
-
-- (double)primitiveHourlyRateValue;
-- (void)setPrimitiveHourlyRateValue:(double)value_;
+- (NSDecimalNumber*)primitiveHourlyRate;
+- (void)setPrimitiveHourlyRate:(NSDecimalNumber*)value;
 
 
 

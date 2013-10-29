@@ -662,6 +662,11 @@ static NSString * const ZumeroIncrementalStoreTemporaryDatabaseName = @"temporar
         return @"int";
     }
     
+    // decimal
+    else if (type == NSDecimalAttributeType) {
+        return @"decimal";
+    }
+
     // boolean
     else if (type == NSBooleanAttributeType) {
         return @"int";
@@ -679,7 +684,6 @@ static NSString * const ZumeroIncrementalStoreTemporaryDatabaseName = @"temporar
     
     // The following types aren't handled:
     // NSUndefinedAttributeType
-    // NSDecimalAttributeType
     // NSTransformableAttributeType
     // NSObjectIDAttributeType
     

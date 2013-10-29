@@ -11,7 +11,7 @@
 #define kSyncIntervalAfterSuccessfulSync 6
 #define kSyncIntervalAfterFailedSync 300
 
-BOOL const DELETE_DATABASE_AT_LAUNCH = NO;
+BOOL const DELETE_DATABASE_AT_LAUNCH = YES;
 BOOL const USE_ZUMERO_STORE = YES;
 // Sync has been disabled for now, since there is an iOS 7-related CFNetworking bug in the Zumero SDK. It should be fixed soon.
 BOOL const SYNC_ENABLED = NO;

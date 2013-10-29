@@ -45,11 +45,6 @@ const struct AssistantRelationships AssistantRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 	
-	if ([key isEqualToString:@"hourlyRateValue"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"hourlyRate"];
-		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
-		return keyPaths;
-	}
 
 	return keyPaths;
 }
@@ -59,27 +54,6 @@ const struct AssistantRelationships AssistantRelationships = {
 
 @dynamic hourlyRate;
 
-
-
-- (double)hourlyRateValue {
-	NSNumber *result = [self hourlyRate];
-	return [result doubleValue];
-}
-
-
-- (void)setHourlyRateValue:(double)value_ {
-	[self setHourlyRate:@(value_)];
-}
-
-
-- (double)primitiveHourlyRateValue {
-	NSNumber *result = [self primitiveHourlyRate];
-	return [result doubleValue];
-}
-
-- (void)setPrimitiveHourlyRateValue:(double)value_ {
-	[self setPrimitiveHourlyRate:@(value_)];
-}
 
 
 
